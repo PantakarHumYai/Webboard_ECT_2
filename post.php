@@ -10,7 +10,13 @@
     <hr>
     <div style="text-align: center;">
         <?php
-            echo "ต้องการดูกระทู้หมายเลข $_GET[id]";
+            $number = $_GET['id'];
+            echo "ต้องการดูกระทู้หมายเลข $number <br>";
+            if(($number %2)==0){
+                    echo"เป็นกระทู้หมายเลขคู่<br>";
+            }else{
+                echo"เป็นกระทู้หมายเลขคี่<br>";
+            }
         ?>
     </div>
     <br>
@@ -19,6 +25,6 @@
     <tr><td><textarea rows ="10" cols = "70"></textarea></td></tr>
     <tr><td colspan = "2" align="center"><input type = "submit" value = "ส่งข้อความ"></td></tr>
     </table>
-    <p style = "text-align: center;"><a href = "index.html" >กลับไปหน้าหลัก</a></p>
+    <p style = "text-align: center;"><a href = "index.php" >กลับไปหน้าหลัก</a></p>
 </body>
 </html>
