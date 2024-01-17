@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +16,15 @@
             $login = $_POST['login'];
             $pwd = $_POST['password'];
             if($login == "admin" && $pwd == "ad1234") {
+                $_SESSION["username"] = "Admin";
+                $_SESSION["role"] = "a";
+                $_SESSION["id"] = session_id();
                 echo "ยินดีต้อนรับคุณ $login <br>";
             }
             elseif($login == "member" && $pwd == "mem1234"){
+                $_SESSION["username"] = "Member";
+                $_SESSION["role"] = "m";
+                $_SESSION["id"] = session_id();
                 echo "ยินดีต้อนรับคุณ $login <br>";
             }
             else{

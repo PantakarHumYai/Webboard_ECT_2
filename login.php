@@ -17,7 +17,7 @@
             <tr><td colspan = "2" align="center"><input type = "submit" value = "Login"></td></tr>
         </table>
         <br>
-        <p style = "text-align: center;">ถ้ายังไม่ได้เป็นสมาชิก <a href = "register.html" >กรุณาสมัครสมาชิก</a></p>
+        <p style = "text-align: center;">ถ้ายังไม่ได้เป็นสมาชิก <a href = "register.php" >กรุณาสมัครสมาชิก</a></p>
         </form>
  <br>
  <div style="font-size: 20px; text-align: center;""><a href="index.php">กลับไปหน้าหลัก</a></div>
