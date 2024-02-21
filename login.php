@@ -17,7 +17,7 @@ if(isset($_SESSION['id'])){
 </head>
 <body>
 <div class="container-lg">
-    <h1 style ="text-align: center;" class = "mt-3">Webboard KakKak</h1>
+    <h1 style ="text-align: center;" class = "mt-3">Webboard SudJang</h1>
     <?php include "nav.php" ?>
     <div class="d-flex justify-content-sm-end mt-2"><a href="newpost.php" class="btn btn-success btn-sm "><i class="bi bi-backspace-reverse"></i> กลับไปยังหน้าหลัก</i></a></div>
     
