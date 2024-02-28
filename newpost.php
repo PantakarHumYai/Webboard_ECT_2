@@ -24,11 +24,11 @@ if(!isset($_SESSION['id'])) {
             <div class="card border-info">
                 <div class="card-header bg-info text-white">ตั้งกระทู้ใหม่</div>
                 <div class="card-body">
-                    <form action="newpost.save.php" method="post">
+                    <form action="newpost_save.php" method="post">
                         <div class="row">
                             <label class="col-lg-3 col-form-label">หมวดหมู่</label>
                             <div class="col-lg-9">
-                                <select name="catefory" class="form-select">
+                                <select name="category" class="form-select">
                                     <?php 
                                         $conn=new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
                                         $sql="SELECT * FROM category";
