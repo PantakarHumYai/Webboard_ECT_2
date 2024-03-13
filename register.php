@@ -16,6 +16,16 @@ if(isset($_SESSION['id'])) {
     <title>register</title>
 </head>
 <body>
+    <script>
+        function OnblurPwd(){
+            let pwd1=document.getElementById("pwd1");
+            let pwd2=document.getElementById("pwd2");
+            if (pwd1.value!==pwd2.value){
+                alert("รหัสผ่านทั้งสองไม่ตรงกันกรุณาลองอีกครั้ง");
+                pwd2.value="";
+            }
+        }
+    </script>
     <div class="container-lg">
     <h1 style="text-align: center;" class="mt-3">Webboard Sudjang</h1>
     <?php include "nav.php" ?>
@@ -46,7 +56,13 @@ if(isset($_SESSION['id'])) {
                         <div class="row mt-3">
                             <label for="pwd" class="col-lg-3 col-form-label">รหัสผ่าน :</label>
                             <div class="col-lg-9">
-                                <input id="pwd" type="password" name="pwd" class="form-control" required>
+                                <input id="pwd1" type="password" name="pwd" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <label for="pwd" class="col-lg-3 col-form-label">ใส่รหัสผ่านซ้ำ :</label>
+                            <div class="col-lg-9">
+                                <input id="pwd2" type="password" name="pwd2" onblur="OnblurPwd()" class="form-control" required>
                             </div>
                         </div>
                         <div class="row mt-3">
