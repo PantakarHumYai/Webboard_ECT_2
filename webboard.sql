@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2024 at 11:09 AM
+-- Generation Time: Mar 13, 2024 at 10:41 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -76,7 +76,8 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`id`, `title`, `content`, `post_date`, `cat_id`, `user_id`) VALUES
-(4, 'อยากบอกรักที่ข้างหู', 'ตอนที่จู๋อยู่ข้างจิ๋ม', '2024-02-28 17:08:18', 4, 8);
+(7, 'อยากบอกรักที่ข้างหู', 'ตอนที่จู๋อยู่ข้างจิ๋ม', '2024-03-13 15:39:31', 1, 9),
+(8, 'สวัสดีครับผมอยากได้ A มากครับขอบคุณครับอาจารย์สุดหล่อ', '<3 ♥', '2024-03-13 16:41:17', 1, 11);
 
 -- --------------------------------------------------------
 
@@ -99,7 +100,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `login`, `password`, `name`, `gender`, `email`, `role`) VALUES
-(8, 'Admin', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Admin พันธกานต์', 'm', 'test@email.com', 'a');
+(9, 'God', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'Admin HumYai', 'm', 'test@gmail.com', 'a'),
+(10, 'Gegie', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'deknoi', 'm', 'asd@asd.com', 'm'),
+(11, 'kak', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'HumLek', 'm', 'HumLek@Hum.com', 'm');
 
 --
 -- Indexes for dumped tables
@@ -149,13 +152,13 @@ ALTER TABLE `comment`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
